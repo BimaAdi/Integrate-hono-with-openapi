@@ -1,8 +1,10 @@
 import { serve } from "@hono/node-server";
 import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono } from "@hono/zod-openapi";
+import { app as todoApp } from "./route/todo"; // <- Import Todo Route
 
 const app = new OpenAPIHono();
+app.route("/todo", todoApp); // <- Add Todo Route to app
 
 // The openapi.json will be available at /doc
 app.doc("/doc", {
