@@ -75,7 +75,16 @@ serve({
 
 ```
 
-3. Your swagger doc will be available at [http://localhost:3000/ui](http://localhost:3000/ui) ![swagger ui](./img/SwaggerUI.png)
+3. Run server
+```bash
+npm run dev
+# or 
+yarn dev
+# or
+pnpm run dev
+```
+
+4. Your swagger doc will be available at [http://localhost:3000/ui](http://localhost:3000/ui) ![swagger ui](./img/SwaggerUI.png)
 
 ## Basic Route
 let's create hello world route, a simple route that just return json with key "hello" and value "world".
@@ -202,7 +211,7 @@ all imported route will be prefixed with "/foo".
 These are some use case example:
 
 ### Path and Query 
-Params and query can only be string. If it's not string hono will return never on c.req.valid("query"). If you want type other than string at type on openapi schema by adding key type, then do parsing and validation on route.
+Params and query can only be string. If it's not string hono will return never on c.req.valid("query"). If you want type other than string add key type, then do parsing and validation on route.
 ```ts
 const pathAndQueryRoute = createRoute({
 	method: "get",
