@@ -143,7 +143,7 @@ serve({
 });
 
 ```
-app.openapi receive 2 parameter schema and route. schema is where you put your openapi definition while route is basic hono api route. Route documentation will shown at swagger UI below
+app.openapi receive 2 parameter schema and route. schema is where you put your openapi definition while route is basic hono api route. Route documentation will shown at swagger UI below.
 ![swagger ui basic route](./img/Hono%20SwaggerUI%20Basic%20Route.png)
 
 ## Code Spliting
@@ -622,4 +622,4 @@ app.openapi(protectedBearerRoute, (c) => {
 });
 ```
 
-That's all guys. Full source code are availble on github repo [](). I hope it can help you integrate hono with openapi/swagger. If I found something new, incorrect or out of date, I'll try to revised this post. If you have any question or found something wrong feel free to ask on the comment section. Cheers.
+That's all guys. Full source code are availble on github repo [https://github.com/BimaAdi/Integrate-hono-with-openapi](https://github.com/BimaAdi/Integrate-hono-with-openapi). I hope it can help you integrate hono with openapi/swagger. If I found something new, incorrect or out of date, I'll try to revised this post. If you have any question or found something wrong feel free to ask on the comment section. Cheers.
